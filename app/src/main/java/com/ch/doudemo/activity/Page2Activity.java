@@ -1,6 +1,7 @@
 package com.ch.doudemo.activity;
 
 import android.os.Bundle;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.PagerSnapHelper;
@@ -33,6 +34,7 @@ public class Page2Activity extends AppCompatActivity {
     private PagerSnapHelper snapHelper;
     private LinearLayoutManager layoutManager;
     private int currentPosition;
+    private BottomNavigationView bottomMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +47,10 @@ public class Page2Activity extends AppCompatActivity {
 
 
     private void initView() {
+//        bottomMenu.findViewById(R.id.navigation);
+//        bottomMenu.setItemIconTintList(null);
+
+
         urlList = new ArrayList<>();
         urlList.add("http://vfx.mtime.cn/Video/2019/02/04/mp4/190204084208765161.mp4");
         urlList.add("http://vfx.mtime.cn/Video/2019/03/21/mp4/190321153853126488.mp4");
